@@ -48,11 +48,12 @@
 
 <div class="row">
   <div class="col-xs-12">
-    <form [formGroup]="slForm" (ngSubmit)="onSubmit(f)">
+    <form [formGroup]="slForm" (ngSubmit)="onSubmit()">
+    <form [formGroup]="slForm" (ngSubmit)="onSubmit()">
       <div class="row">
         <div class="col-xs-12">
           <button type="submit" class="btn btn-success" [disabled]="!slForm.valid">Save</button>
-          <button type="button" class="btn btn-danger" (click)="onCancel(f)">Cancel</button>
+          <button type="button" class="btn btn-danger" (click)="onCancel()">Cancel</button>
         </div>
       </div>
       <div class="row">

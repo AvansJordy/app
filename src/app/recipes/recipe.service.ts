@@ -45,7 +45,9 @@ export class RecipeService {
   }
 
   addIngredientsToShoppingList(ingredients: Ingredient[]) {
-    this.slService.addIngredients(ingredients);
+    for (let ingredient of ingredients) {
+      this.slService.addIngredient(ingredient);
+    }
   }
 
   addRecipe(recipe: Recipe) {

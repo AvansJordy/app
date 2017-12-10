@@ -30,7 +30,8 @@ import { RecipeService } from './recipes/recipe.service';
     ShoppingEditComponent,
     DropdownDirective,
     RecipeStartComponent,
-    RecipeEditComponent
+    RecipeEditComponent,
+    ShoppingEditComponent
   ],
   imports: [
     BrowserModule,

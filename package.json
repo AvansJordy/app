@@ -1,6 +1,9 @@
 {
   "name": "n5-complete-guide",
   "version": "0.0.0",
+  "engines": {
+    "npm": "2.1.x"
+  },
   "license": "MIT",
   "scripts": {
     "_heroku":      "https://www.angularonrails.com/deploy-rails-application-angular-cli-webpack-front-end/",
@@ -48,7 +51,5 @@
     "ts-node": "~3.2.0",
     "tslint": "~5.7.0",
     "typescript": "~2.4.2"
-  },
-
-  "engines" : { "node" : ">=6.14" }
+  }
 }

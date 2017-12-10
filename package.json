@@ -1,12 +1,19 @@
 {
   "name": "n5-complete-guide",
   "version": "0.0.0",
-  "engines": {
-    "npm": "2.1.x"
-  },
   "license": "MIT",
   "scripts": {
-    "start": "node server.js"
+    "_heroku":      "https://www.angularonrails.com/deploy-rails-application-angular-cli-webpack-front-end/",
+    "start":        "http-server dist/",
+    "lint":         "tslint \"src/**/*.ts\"",
+    "test":         "ng test",
+    "pree2e":       "webdriver-manager update",
+    "e2e":          "protractor",
+    "preinstall":   "npm install -g http-server",
+    "postinstall":  "ng build --prod"
+  },
+  "engines": {
+    "node": "6.11.1"
   },
   "private": true,
   "dependencies": {
@@ -25,19 +32,6 @@
     "zone.js": "^0.8.14"
   },
   "devDependencies": {
-    "@angular/animations": "^5.0.0",
-    "@angular/common": "^5.0.0",
-    "@angular/compiler": "^5.0.0",
-    "@angular/core": "^5.0.0",
-    "@angular/forms": "^5.0.0",
-    "@angular/http": "^5.0.0",
-    "@angular/platform-browser": "^5.0.0",
-    "@angular/platform-browser-dynamic": "^5.0.0",
-    "@angular/router": "^5.0.0",
-    "bootstrap": "^3.3.7",
-    "core-js": "^2.4.1",
-    "rxjs": "^5.5.2",
-    "zone.js": "^0.8.14",
     "@angular/cli": "1.5.0",
     "@angular/compiler-cli": "^5.0.0",
     "@angular/language-service": "^5.0.0",

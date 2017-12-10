@@ -28,17 +28,17 @@ export class ShoppingEditComponent implements OnInit, OnDestroy {
   constructor(private slService: ShoppingListService, private route: ActivatedRoute, private router: Router) { }
 
   ngOnInit() {
-    this.route.params
-      .subscribe(
-        (params: Params) => {
-          this.id = params['id'];
-          console.log(this.id);
-          this.editMode = params['id'] != null;
-          this.editedItemIndex = params['id'];
-          this.editedItem = this.slService.getIndiIngredient(params);
-          this.initForm();
-        }
-      );
+    // this.route.params
+    //   .subscribe(
+    //     (params: Params) => {
+    //       this.id = params['id'];
+    //       console.log(this.id);
+    //       this.editMode = params['id'] != null;
+    //       this.editedItemIndex = params['id'];
+    //       this.editedItem = this.slService.getIndiIngredient(params);
+    //       this.initForm();
+    //     }
+    //   );
   }
 
   // onSubmit(form: NgForm) {

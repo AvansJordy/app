@@ -1,5 +1,8 @@
 {
   "name": "n5-complete-guide",
+  "engines": {
+    "node": "6.11.1"
+  },
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
@@ -11,9 +14,6 @@
     "e2e":          "protractor",
     "preinstall":   "npm install -g http-server",
     "postinstall":  "ng build --prod"
-  },
-  "engines": {
-    "node": "6.11.1"
   },
   "private": true,
   "dependencies": {
